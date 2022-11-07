@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+*{
+    margin-top: 20px;
+}
+
+.img1{
+    width: 150px;
+    height: 120px;
+}
+
+.n22{
+    display: flex;
+    justify-content: space-between;
+}
+.n23{
+    display: flex;
+}
+hr{
+    width: 100%;
+    height: 3px;
+    background: black;
+}
+.calcblock{
+    display: flex;
+}

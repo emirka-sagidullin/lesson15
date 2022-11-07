@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>lesson15</title>
+</head>
+<body>
+    <button onclick="alert('Джавапон!')">Нажми на меня</button>
+
+    <button onclick="buttonClick1()">Нажми на меня</button>
+    <input type="text" id="input1" value="Джавапон?">
+
+    <button onclick="buttonClick2()">Нажми на меня</button>
+    <input type="text" id="input2" value="Джавапон">
+
+    <button onclick="buttonClick3()">Нажми на меня</button>
+    <input type="text" id="input3" placeholder="Введитe джавапон">
+
+    <button onclick="buttonClick4()">Нажми на меня</button>
+    <input type="text" id="input4.1" placeholder="Введитe джавапон" value="???"><input type="text" id="input4.2" placeholder="Введитe джавапон" value="!!!">
+
+    <input type="button" onclick="buttonClick5(this)" value="Нажми на меня">
+
+    <button onclick="buttonClick6()">Нажми на меня</button>
+    <input type="text" id="input6" value="Какой-то текст!">
+
+    <button onclick="button1Click7()">Заблокировать</button>
+    <button onclick="button2Click7()">Отблокировать</button>
+    <input type="text" id="input7" value="Какой-то текст!">
+
+    <!-- 1 -->
+    <button onclick="alert('Привет!')">Нажми на меня</button>
+
+    <!-- 2 -->
+    <button onmouseover="alert('Привет!')">Наведи на меня</button>
+
+    <!-- 3 -->
+    <button ondblclick="alert('Привет!')">Двойной счелчок по мне!</button>
+
+    <!-- 4 -->
+    <button onmouseout="alert('Привет!')">Наведи на меня мышь - а потом убери!</button>
+
+    <!-- 5 -->
+    <button onclick="buttonClick8()">Нажми на меня</button>
+    <input type="text" id="input8" value="Ку-ку!">
+
+    <!-- 6 -->
+    <button onclick="buttonClick9()">Нажми на меня</button>
+    <input type="text" id="input9" value = "Ку-ку!">
+
+    <!-- 7 -->
+    <img src="./assets/img/1.jpg" alt="" id="img1">
+    <button onclick="buttonClick10()">Нажми на меня</button>
+
+    <!-- 8 -->
+    <input onfocus="buttonFocus11()" type="text" id="input11" value = "Нажми на меня!">
+
+    <!-- 9 -->
+    <input onfocus="buttonFocus12()" type="text" id="input12" value = "Нажми на меня!">
+
+    <!-- 10 -->
+    <input onfocus="buttonFocus13()" onblur="buttonBlur13()" type="text" id="input13" value = "Нажми на меня!">
+
+    <!-- 11 -->
+    <input type="submit" onclick="inputClick14()" id="input14" value = "Нажми на меня!">
+
+    <!-- 12 -->
+    <input type="submit" onclick="inputClick15()" id="input15" value = "Нажми на меня!">
+
+    <!-- 13 -->
+    <img src="./assets/img/1.jpg" onmouseover="imgOver16()" onmouseout="imgOut16()" alt="" id="img16">
+
+    <!-- 14 -->
+    <button onclick="buttonClick17()">Нажми на меня!</button>
+    <input type="text" id="input17" value="Ку-ку!">
+
+    <!-- 15 -->
+    <button onclick="buttonClick18()">Нажми на меня!</button>
+    <button onclick="buttonClick18again()">Нажми потом на меня!</button>
+    <input type="text" id="input18" value="Ку-ку!">
+
+    <!-- 16 -->
+    <button onclick="buttonClick19()">Нажми на меня!</button>
+    <input type="text" id="input19" value="Ку-ку!">
+
+    <!-- 17 -->
+    <input type="submit" onclick="buttonClick20_1()" id="input20_1" value = "Нажми на меня!">
+    <input type="submit" onclick="buttonClick20_2()" id="input20_2" value = "Нажми, чтобы отблокировать элемент!">
+
+    <!-- 18 -->
+    <input type="submit" onclick="buttonClick21()" id="input21" value = "0">
+
+    <!-- 19 -->
+    <div class="n22" id="n22">
+        <input type="text" id="input22" value="Ку-ку!">
+        <button onclick="buttonClick22()">Нажми на меня!</button>
+    </div>
+
+    <!-- 20 -->
+    <div class="n23" id="n23">
+        <input type="text" id="input23" value="Ку-ку!">
+        <button onclick="buttonClick23()">Нажми на меня!</button>
+    </div>
+
+    <!-- 21 -->
+    <div class="n23" id="n24">
+        <input type="text" id="input24_1" value="Привет!">
+        <input type="text" id="input24_2" value="Пока!">
+        <button onclick="buttonClick24()">Нажми на меня!</button>
+    </div>
+
+    <!-- 22 -->
+    <div class="n23" id="n25">
+        <input type="text" id="input25_1" placeholder="Введите число!">
+        <input type="text" id="input25_2" placeholder="Здесь появится результат">
+        <button onclick="buttonClick25()">Нажми на меня!</button>
+    </div>
+
+    <!-- 23 -->
+    <div class="n23" id="n26">
+        <input type="text" id="input26_1" placeholder="Введите число!">
+        <input type="text" id="input26_2" placeholder="Здесь появится результат">
+        <button onclick="buttonClick26()">Нажми на меня!</button>
+    </div>
+
+    <!-- 24 -->
+    <input type="submit" onclick="buttonClick27()" id="input27" value="Нажми на меня!">
+
+    <!-- 25 -->
+    <input type="text" onclick="buttonClick28()" id="input28">
+    <div class="n28.1">
+        <input type="submit" onclick="buttonClick28_plus()" id="input28_plus" value="Я добавлю +">
+        <input type="submit" onclick="buttonClick28_minus()" id="input28_minus" value="Я добавлю -">
+        <input type="submit" onclick="buttonClick28_divide()" id="input28_divide" value="Я добавлю /">
+        <input type="submit" onclick="buttonClick28_multiply()" id="input28_multiply" value="Я добавлю *">
+    </div>
+    <div class="n28.2">
+        <input type="submit" onclick="buttonClick28_0()" id="input28" value="0">
+        <input type="submit" onclick="buttonClick28_1()" id="input28" value="1">
+        <input type="submit" onclick="buttonClick28_2()" id="input28" value="2">
+        <input type="submit" onclick="buttonClick28_3()" id="input28" value="3">
+        <input type="submit" onclick="buttonClick28_4()" id="input28" value="4">
+        <input type="submit" onclick="buttonClick28_5()" id="input28" value="5">
+        <input type="submit" onclick="buttonClick28_6()" id="input28" value="6">
+        <input type="submit" onclick="buttonClick28_7()" id="input28" value="7">
+        <input type="submit" onclick="buttonClick28_8()" id="input28" value="8">
+        <input type="submit" onclick="buttonClick28_9()" id="input28" value="9">
+    </div>
+
+    <hr>
+    <!-- Задачи на даты -->
+
+    <!-- 1 -->
+    <button onclick="buttonClick29()">Показать дату</button>
+
+    <!-- 2 -->
+    <button onclick="buttonClick30()">Показать месяц</button>
+
+    <!-- 1 -->
+    <button onclick="buttonClick31()">Показать день</button>
+
+    <!-- 2 -->
+    <button onclick="buttonClick32()">Показать месяц</button>
+
+    <!-- 3 -->
+    <button onclick="buttonClick33()">Показать год</button>
+
+    <!-- 4 -->
+    <button onclick="buttonClick34()">Показать время-дату</button>
+
+    <!-- 5 -->
+    <button onclick="buttonClick35()">Показать номер дня недели</button>
+
+    <!-- 6 -->
+    <button onclick="buttonClick36()">Показать день недели</button>
+
+    <!-- 7 -->
+    <button onclick="buttonClick37()">7 января 2015 года</button>
+
+    <!-- 8 -->
+    <button onclick="buttonClick38()">Сколько минут прошло с 1-го января 1970 года</button>
+
+    <!-- 9 -->
+    <button onclick="buttonClick39()">Сколько часов прошло с 1-го марта 1988 года</button>
+
+    <!-- 10 -->
+    <button onclick="buttonClick40()">Сколько прошло с начала дня</button>
+
+    <!-- 11 -->
+    <button onclick="buttonClick41()">Сколько осталось до конца дня</button>
+
+    <!-- 12 -->
+    <input type="text" id="input12_1" onblur="inputBlur42()" placeholder="Введите дату рождения в формате год-месяц-день">
+    <input type="submit" id="input12_2" value="">
+
+
+    <hr>
+
+    <!-- Задачи на работу с элементами страницы в JavaScript -->
+
+
+    <!-- 1 -->
+    <button onclick="buttonClick42()">Нажми на меня</button>
+    <span id="elem42">Это span с текстом.</span>
+
+    <!-- 2 -->
+    <button onclick="buttonClick43()">Нажми на меня</button>
+    <span id="elem43">Это span с текстом.</span>
+
+    <!-- 3 -->
+    <h2>Заголовок не поменяется.</h2>
+    <p>Абзац поменяется.</p>
+    <p>Абзац поменяется.</p>
+    <p>Абзац поменяется.</p>
+
+    <input type="submit" onclick="inputClick44()">
+
+    <!-- 4 -->
+    <h2 class="zzz">Заголовок с классом zzz.</h2>
+    <p class="zzz">Абзац с классом zzz.</p>
+    <p class="zzz">Абзац с классом zzz.</p>
+    <p>Просто абзац, не поменяется.</p>
+
+    <input type="submit" onclick="inputClick45()">
+
+    <!-- 5 -->
+    <h2 class="zzzz">Заголовок с классом zzzz, не поменяется.</h2>
+    <p class="zzzz">Абзац с классом zzzz.</p>
+    <p class="zzzz">Абзац с классом zzzz.</p>
+    <p>Просто абзац, не поменяется.</p>
+
+    <input type="submit" onclick="inputClick46()">
+
+    <!-- Задачи для решения -->
+
+    <!-- 1 -->
+    <p id="zdr1">При нажатии на кнопку текст в абзаце поменяется.</p>
+    <button onclick="buttonClick47()">Нажмите на меня!</button>
+
+    <!-- 2 -->
+    <p id="zdr2">При нажатии на кнопку текст в абзаце поменяется.</p>
+    <button onclick="buttonClick48()">Нажмите на меня!</button>
+
+    <!-- 3 -->
+    <p id="zdr3">При нажатии на кнопку абзац станет h3, но текст останется.</p>
+	<input type="submit" value="Нажмите на меня!" onclick="buttonClick49()">
+
+    <!-- 4 -->
+    <div class="calcblock">
+    <input type="text" value="" id="input50_1">
+    <div class="">+</div>
+    <input type="text" value="" id="input50_2">
+    <div class="">=</div>
+    <span id = "result">?</span>
+    </div>
+	<button onclick="buttonClick50()">Нажмите, чтобы сложить</button>
+
+    <!-- 5 -->
+    <p>
+		При нажатии на кнопку текст в каждом абзаце поменяется.
+	</p>
+	<p>
+		При нажатии на кнопку текст в каждом абзаце поменяется.
+	</p>
+	<p>
+		При нажатии на кнопку текст в каждом абзаце поменяется.
+	</p>
+	<p>
+		При нажатии на кнопку текст в каждом абзаце поменяется.
+	</p>
+	<h2>А я h2 и не поменяюсь!</h2>
+	<input type="submit" value="Нажмите на меня!"  onclick="buttonClick51()">
+
+    <!-- 6 -->
+    <h2 class="www">Заголовок с классом www.</h2>
+    <p class="www">Абзац с классом www.</p>
+    <p class="www">Абзац с классом www.</p>
+    <p>Просто абзац, не поменяется.</p>
+    <button onclick="buttonClick52()">Нажмитена меня!</button>
+
+    <!-- 7 -->
+    <h2 class="www">Заголовок с классом www, не поменяется.</h2>
+    <p class="www">Абзац с классом www.</p>
+    <p class="www">Абзац с классом www.</p>
+    <p class="www">Абзац с классом www.</p>
+    <p>Просто абзац, не поменяется.</p>
+    <button onclick="buttonClick53()">Нажми на меня!</button>
+
+    <!-- 8 -->
+    <p id = "zdr8" class="my-class">Абзац с class="my-class".</p>
+	<input type="submit" value="Нажми - и я выведу класс абзаца." onclick="buttonClick54()">
+
+    <!-- 9 -->
+    <p id = "zdr9" class="my-class">Абзац с class="my-class". Класс задает красный цвет.</p>
+	<input type="submit" value="Нажми - и я выведу класс абзаца." onclick="buttonClick55_1()">
+	<input type="submit" value="Нажми - и я удалю атрибут class для абзаца." onclick="buttonClick55_2()">
+
+    <!-- 10 -->
+    <p id = "elem10" class="my-class class">Абзац с class="my-class class". Класс "my-class" задает красный цвет.</p>
+	<input type="submit" value="Нажми - и я выведу класс абзаца." onclick="buttonClick56_1()">
+	<input type="submit" value="Нажми - и я изменю атрибут class для абзаца на 'new-class'." onclick="buttonClick56_2()">
+
+    <!-- 11 -->
+    <input type="text"  placeholder="Введи в меня текст!" id="elem11" onkeyup="buttonClick57(this)">
+	<span id="text"></span>
+
+    <!-- 12 -->
+    <a href="http://google.ru">ссылка 1</a>
+	<a href="http://tut.by">ссылка 2</a>
+	<a href="http://yandex.ru">ссылка 3</a>
+	<input type="submit" value="Нажмите на меня!"  onclick="buttonClick58()">
+
+    <!-- 13 -->
+    <p id="zdr13">При нажатии на кнопку текст в абзаце поменяется.</p>
+	<input type="submit" value="Нажмите на меня!"  onclick="buttonClick59(this)">
+
+    <!-- 14 -->
+    <p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<input type="submit" value="Нажмите на меня!" onclick="buttonClick60()">
+
+    <!-- 15 -->
+    <p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<p>Абзац с текстом.</p>
+	<input type="submit" value="Нажмите на меня!" onclick="buttonClick61()">
+
+
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
